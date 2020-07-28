@@ -1,0 +1,23 @@
+table { font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; font-size: 12px; margin: 45px; width: 550px;
+    text-align: center; border-collapse: collapse; }
+th { font-size: 13px; font-weight: normal; padding: 8px; background: yellow; border-top: 4px solid yellow;
+
+border-bottom: 1px solid white; color: black; }
+
+
+td { padding: 8px; background: rgb(235, 227, 227); border-bottom: 1px solid #fff; color: blue; border-top: 1px solid transparent; }
+
+
+tr:hover td { background: #0db9ee; color: rgb(0, 0, 0); }
+
+
+.boton {   color: blue; padding: 5px; margin: 10px;
+    background-color: #b9c9fe;
+    font-weight: bold; }
+#contenedorForm {margin-left: 45px; font-size:12px;}
+
+
+.Editar {color: green; cursor:pointer;}
+
+
+body {font-family: Arial, Helvetica, sans-serif; background-color: #fff;}

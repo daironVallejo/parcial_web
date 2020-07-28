@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="pequena.css">
+        <title>enviado</title>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2" id="ok_dato"></th>
+                    <th id="alimento_dato"></th>
+                </tr>
+                <tr>
+                    <th>Alimento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2" id="calorias_dato"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="grasas_dato"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="proteina_dato"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" id="carbohidratos_dato"></td>
+                </tr>
+            </tbody>
+        </table>
+        <script type ="text/javascript">
+
+        var url_string = window.location.href;
+
+        var url = new URL(url_string);
+
+
+        //url para obtener los datos de la otra tabla
+        var c = url.searchParams.get("alimento");
+        var c2 = url.searchParams.get("calorias");
+        var c3 = url.searchParams.get("grasas");
+        var c4 = url.searchParams.get("proteina");
+        var c5 = url.searchParams.get("carbohidratos");
+        var c6 = url.searchParams.get("ok");
+
+        
+        //sslector para mostrar datos
+        document.querySelector('#alimento_dato').innerText = c;
+        document.querySelector('#calorias_dato').innerText = "calorias (kCal) =   "+c2;
+        document.querySelector('#grasas_dato').innerText = "grasas (g) =              "+c3;
+        document.querySelector('#proteina_dato').innerText = "proteina (g) =   "+c4;
+        document.querySelector('#carbohidratos_dato').innerText = "carbohidratos (g) = "+c5;
+        document.querySelector('#ok_dato').innerText = c6;
+
+        </script>
+    </body>
+</html>
